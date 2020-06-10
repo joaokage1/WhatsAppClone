@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_pais"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nome" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/et_ddd"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -60,23 +60,23 @@
         android:inputType="number"
         android:textColor="@android:color/white"
         android:textColorHint="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toStartOf="@+id/et_telefone"
+        app:layout_constraintStart_toEndOf="@+id/et_pais"
+        app:layout_constraintTop_toBottomOf="@+id/et_nome" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/et_telefone"
         android:layout_width="233dp"
-        android:layout_height="44dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="999999999"
+        android:hint="99999-9999"
         android:inputType="number"
         android:textColor="@android:color/white"
         android:textColorHint="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nome" />
 
     <Button
         android:id="@+id/btn_cadastrar"
@@ -90,5 +90,5 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/et_telefone" />
 </androidx.constraintlayout.widget.ConstraintLayout>
